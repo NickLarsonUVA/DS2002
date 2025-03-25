@@ -1,1 +1,8 @@
+DS2002 Project - Comparing popular movies worlwide gross for recent movies and past movies -- trying to figure out if year has any relation to gross income
 
+How to use ETL processor: uses an API call and local csv and combines these data into a large data frame, then runs analysis on the information and graphs it for easier interpretation for the user. Makes lots of different changes to make sure the merge runs smoothly and the data can be provided effectively
+
+Necessary for project: The link to my github for Source 2: https://github.com/NickLarsonUVA/DS2002/blob/main/DPmovies.csv
+and The Movie Database (TMDb) API to fetch and display popular movies (instructions inside my code)
+
+Work through the code as instructions are listed above and within the coding blocks
