@@ -5,7 +5,9 @@ http://35.199.55.233:5000
 
 Anyone with the correct token can access it from anywhere — fully public.
 
-Important: The API is hosted on a Google Cloud virtual machine. This means the API is only available when the VM is actively running. If the VM is stopped or terminated, the API at http://35.199.55.233:5000 will not be reachable until the VM is restarted and the Flask app is relaunched.
+Important: The API is hosted on a Google Cloud virtual machine. This means the API is only available when 
+the VM is actively running. If the VM is stopped or terminated, the API at http://35.199.55.233:5000 will 
+not be reachable until the VM is restarted and the Flask app is relaunched.
 
 -----------------------------------------------------------------------------------------
 Requirement: "Implement a TOKEN so only authorized tokens can work"
