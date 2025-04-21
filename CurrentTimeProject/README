@@ -1,0 +1,64 @@
+This is a secure Flask API hosted on a Google Cloud VM. It returns the **current local time** and **UTC offset** 
+for a specified **capital city**.
+
+---
+Base URL
+http://35.199.55.233:5000 
+
+---
+Authentication:
+
+All requests must include a **Bearer Token** in the `Authorization` header.
+**Token: supersecrettoken123**
+**Header format:**
+Authorization: Bearer supersecrettoken123
+
+--- 
+Endpoint:
+
+#`GET /api/time/<capital>`
+
+Returns the current time and UTC offset for the given capital.
+
+---
+Example Request and Response:
+
+**Using `curl`:**
+
+```bash
+curl -H "Authorization: Bearer supersecrettoken123" http://35.199.55.233:5000/api/time/London
+
+Respone:
+{
+  "capital": "London",
+  "local_time": "2025-04-21 16:45:12",
+  "utc_offset": "+01:00"
+}
+---
+Error Responses: Either no token or city not found
+no token:
+{
+  "error": "Unauthorized"
+}
+city not found:
+{
+  "error": "'Atlantis' is not a recognized capital city."
+}
+
+---
+Supported capitals for API:
+London
+Paris
+Tokyo
+Washington
+Canberra
+Ottawa
+New Delhi
+Brasília
+
+--- 
+Requirements:
+Flask and pytz
+
+---
+Local Testing with client.py shows results
