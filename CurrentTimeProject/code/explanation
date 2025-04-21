@@ -1,0 +1,14 @@
+API is running on a public VM.
+
+It’s reachable at:
+http://35.199.55.233:5000
+
+Anyone with the correct token can access it from anywhere — fully public.
+-----------------------------------------------------------------------------------------
+Requirement: "Implement a TOKEN so only authorized tokens can work"
+The /api/time/<capital> routes require a token.
+
+If the request does not include the correct token, your API returns
+{
+  "error": "Unauthorized"
+}
