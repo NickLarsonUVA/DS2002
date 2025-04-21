@@ -19,4 +19,5 @@ If the request does not include the correct token, your API returns
 }
 ----------------------------------------------------------------------------------------
 For my GCP VM I had two different SSH running at the same time. One with the app.py
-The other I used for the curl so I could properly test.
+The other I used for the curl so I could test.
+Then I used the local terminal with the client.py for the local tests.
