@@ -8,10 +8,12 @@ http://35.199.55.233:5000
 ---
 Authentication:
 
-All requests must include a **Bearer Token** in the `Authorization` header.
-**Token: supersecrettoken123**
-**Header format:**
-Authorization: Bearer supersecrettoken123
+This API is protected with a Bearer token.
+**Token:** `supersecrettoken123`
+All requests must include this in the header:
+
+```bash
+-H "Authorization: Bearer supersecrettoken123"
 
 --- 
 Endpoint:
